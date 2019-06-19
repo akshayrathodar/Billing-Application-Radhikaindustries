@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body style="margin-top:10%">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			
+			<div class="col-sm-8">
+				<form method="post" action="http://localhost:8080/ar/soft">
+					<center>
+					<table border='1' class="table">
+						<tr>
+							<td colspan="2"><center><img src="radhika-ind.jpg"></center></img>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							Enter Bill Number : 
+							</td>
+							<td>
+							<input type="text" name="bno">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							Enter Party's Name : 
+							</td>
+							<td>
+							<input type="text" name="pnm">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							GST NO : 
+							</td>
+							<td>
+							<input type="text" name="gno" maxlength="15">
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+							Enter Party's Address : 
+							</td>
+							<td>
+							<input type="text" name="padd">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							State : 
+							</td>
+							<td>
+							<select name="state">
+								<option value="gujarat">Gujarat</option>
+								<option value="Maharashtra">Maharashtra</option>
+							</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							Enter Date : 
+							</td>
+							<td>
+							<input type="date" name="dt">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							Enter Machine Name : 
+							</td>
+							<td>
+							<input type="text" name="mnm">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							Enter Quantity : 
+							</td>
+							<td>
+							<input type="text" name="qty">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							Enter price : 
+							</td>
+							<td>
+							<input type="text" name="price">
+							</td>
+						</tr>
+						<tr>
+							<td colspan='2'>
+								<input type="submit" name="submit" class="btn btn-success">
+							</td>
+						</tr>
+						</table>
+						
+						</center>
+				</form>
+	</div>
+	<div class="col-sm-2"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style>
+#ic, #passport { display: none; }
+</style>
+<script type="text/javascript">
+function show(select_item) {
+	    if (select_item == "apple") {
+		    hiddenDiv.style.visibility='visible';
+			dpear.style.visibility='hidden';
+			dpear.style.display='none';
+			
+			hiddenDiv.style.display='block';
+			Form.fileURL.focus();
+		} 
+		else if(select_item == "pear")
+		{
+			hiddenDiv.style.visibility='hidden';
+			hiddenDiv.style.display='none';
+
+			dpear.style.visibility='visible';
+			dpear.style.display='block';
+		}
+		else if(select_item == "hdt")
+		{
+			hiddenDiv.style.visibility='hidden';
+			hiddenDiv.style.display='none';
+			
+			dpear.style.visibility='hidden';
+			dpear.style.display='none';
+			
+			hd.style.visibility='visible';
+			hd.style.display='block';
+
+		}
+		else{
+			hiddenDiv.style.visibility='hidden';
+			hiddenDiv.style.display='none';
+		}
+	}	</script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			
+			<div class="col-sm-8">
+	<form method="get" action="http://localhost:8080/ar/disp">
+	<center>
+	<table border="1" class="table">
+		<tr>
+			<td colspan="2"><center><img src="radhika-ind.jpg"></img></center></td>
+		</tr>
+		<tr>
+			<td>
+				Find Bill by :
+
+			</td>
+			<td>
+ <select name="Fruit" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+		<option>Select</option>
+        <option value='pear'>Bill Number</option>
+        <option value='apple'>Party Name</option>
+        <option value='hdt'>Date</option>
+        
+    </select>
+</td>
+		</tr>
+		<tr>
+			<td colspan="2"><center><div id='hiddenDiv' style="display:none; visibility:hidden;">
+   Enter party's Name :  <input type="text" placeholder="for ex. Akshay Rathod" name="pnmh"/>
+</div>
+<div id='dpear' style="display:none; visibility:hidden;">
+   Enter Bill Number : <input type="texts" placeholder="for ex. 1" name="bno" value="0"/>
+</div>
+<div id='hd' style="display:none; visibility:hidden;">
+   Date : <input type="date" name="dfs"/>
+</div>
+
+</center></td>
+		</tr>
+		<tr>
+		<td colspan="2">
+		<center><input type="submit" class="btn btn-success"></center></td>
+		</tr>
+	</table>
+	</center>
+	</form>
+	</div>
+	<div class="col-sm-2"></div>
+	</div>
+</div>
+</body>
+</html>
